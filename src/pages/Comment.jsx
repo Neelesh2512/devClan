@@ -79,8 +79,8 @@ const comment = () => {
         <HomeNav />
         <div className="w-9/12 fixed left-1/4 top-0" style={{backgroundColor: "#1E1E1E"}}>
             <div>
-              {/* <Message {...routeData}></Message> */}
-              <div className=" border bg-white p-8" style={{backgroundColor:"#0C0C0C", color:"white", border:"1px solid grey"}}>
+              <Message {...routeData}></Message>
+              {/* <div className=" border bg-white p-8" style={{backgroundColor:"#0C0C0C", color:"white", border:"1px solid grey"}}>
                 <div className="flex items-center gap-2">
                   <img src={avatar} className="w-10 rounded-full" />
                   <h2>{username}</h2>
@@ -89,7 +89,7 @@ const comment = () => {
                   <p>{description}</p>
                 </div>
                 {children}
-              </div>
+              </div> */}
             </div>
             
             <div className="my-4">

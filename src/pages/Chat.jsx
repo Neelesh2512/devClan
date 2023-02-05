@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './Chat.css';
+import '../pages/Css/Chat.css';
 import {auth } from '../utils/firebase';
 
 import { getFirestore } from 'firebase/firestore';

@@ -15,6 +15,7 @@ import {
   Timestamp,
   updateDoc,
 } from "firebase/firestore";
+import HomeNav from "../components/HomeNav";
 
 const comment = () => {
     const navigate = useNavigate();
@@ -74,8 +75,23 @@ const comment = () => {
 
 
     return(
-        <div>
-            <Message {...routeData}></Message>
+        <div >
+        <HomeNav />
+        <div className="w-9/12 fixed left-1/4 top-0" style={{backgroundColor: "#1E1E1E"}}>
+            <div>
+              {/* <Message {...routeData}></Message> */}
+              <div className=" border bg-white p-8" style={{backgroundColor:"#0C0C0C", color:"white", border:"1px solid grey"}}>
+                <div className="flex items-center gap-2">
+                  <img src={avatar} className="w-10 rounded-full" />
+                  <h2>{username}</h2>
+                </div>
+                <div className="py-4">
+                  <p>{description}</p>
+                </div>
+                {children}
+              </div>
+            </div>
+            
             <div className="my-4">
         <div className="flex">
           <input
@@ -92,10 +108,11 @@ const comment = () => {
             Submit
           </button>
         </div>
-        <div className="py-6">
-          <h2 className="font-bold">Comments</h2>
+        <div className="py-6" >
+          <h2 className="font-bold" style={{color:"white"}}>Comments</h2>
+          <div className="doubtContainer">
           {allMessage?.map((message) => (
-            <div className="bg-white p-4 my-4 border-2" key={message.time}>
+            <div className="bg-white p-10 border-2" key={message.time} style={{backgroundColor:"#0C0C0C", color:"white"}}>
               <div className="flex items-center gap-2 mb-4">
                 <img
                   className="w-10 rounded-full"
@@ -107,9 +124,11 @@ const comment = () => {
               <h2>{message.message}</h2>
             </div>
           ))}
+          </div>
         </div>
       </div>
-        </div>
+      </div>
+      </div>
     )
 }
 

@@ -8,20 +8,22 @@
     overflow-y: scroll;
 }
 
-.content_Container{
+/* .content_Container{
     max-height: 700px;
     -webkit-box-shadow: -19px -7px 25px -25px rgba(0,0,0,0.75);
 -moz-box-shadow: -19px -7px 25px -25px rgba(0,0,0,0.75);
 box-shadow: -19px -7px 25px -25px rgba(0,0,0,0.75);
-    /* overflow-y: scroll; */
-}
+    overflow-y: scroll;
+} */
+
+
 .doubtContainer::-webkit-scrollbar {
     display: none;
   }
-
+/* 
 .formContainer{
     -webkit-box-shadow: 17px 20px 25px -16px rgba(0,0,0,0.75);
     -moz-box-shadow: 17px 20px 25px -16px rgba(0,0,0,0.75);
     box-shadow: 17px 20px 25px -16px rgba(0,0,0,0.75);
 
-  }
+  } */

@@ -5,7 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth, db } from '../utils/firebase';
 import { collection, query, onSnapshot, orderBy, addDoc, serverTimestamp, where } from 'firebase/firestore';
 
-import './ChatBox.css';
+import '../components/component_css/ChatBox.css';
 
 const ChatBox = () => {
   const [messageData, setMessageData] = useState();
